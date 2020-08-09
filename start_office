@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "###############"
+echo "The public IP address of the current EC2 instance is: "
+curl http://checkip.amazonaws.com
+echo "Replace 'localhost' below with the EC2 IP address to access the desktop from Web "
+echo "###############"
+python3 wdo.py &
+#python3 spyder_desktop.py

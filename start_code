@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "#######################################################################################"
+echo "The public IP address of the current EC2 instance is: "
+curl http://checkip.amazonaws.com
+echo "Replace 'localhost' of below URL with the EC2 IP address to access the desktop from Web "
+echo "#######################################################################################"
+#python3 vscode_desktop.py
+python3 code.py -d
